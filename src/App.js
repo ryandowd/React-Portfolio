@@ -1,48 +1,34 @@
 import React, { Component } from 'react';
-import { updateObject } from './shared/utility';
-import logo from './logo.svg';
 import axios from 'axios';
 
-import './App.css';
+import './App.scss';
 
-import Header from './components/Header/Header';
-import Timeline from './containers/Timeline/Timeline';
+import Header from "./components/Header/Header";
+import Timeline from "./components/Timeline/Timeline";
 
 class App extends Component {
 
   state = {
     isLoading: true,
-    timelineItems: null
+    timelineItemData: null
   };
 
   componentDidMount() {
     axios.get('TimelineItemsJSON.json')
       .then(res => {
-        this.setState({ 
+        this.setState({
           isLoading: false,
-          timelineItems: res.data
+          timelineItemData: res.data
         });
       })
-  };
-
-  changeStateHandler = () => {
-    const updatedEvent = updateObject(this.state.timelineItems.event1, {
-      Location: 'Blah blah',
-    });
-
-    const updatedItems = updateObject(this.state.timelineItems, {
-      event1: updatedEvent
-    });
-
-    this.setState({timelineItems: updatedItems});
   };
 
   render() {
 
     return (
       <div className="App">
-        <Header changeStateHandler={this.changeStateHandler}/>
-        {!this.state.isLoading ? <Timeline timelineItems={this.state.timelineItems}/> : <h3>Loading...</h3>}
+        <Header/>
+        { !this.state.isLoading ? <Timeline timelineItemData={this.state.timelineItemData}/> : <span>Still Loading...</span> }
       </div>
     );
     

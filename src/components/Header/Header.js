@@ -1,11 +1,15 @@
 import React from 'react';
 
-import classes from './Header.css';
+import './Header.scss';
+import Logo from './Logo/Logo';
 
 const header = ( props ) => (
-  <header 
-    className="header" 
-    onClick={ props.changeStateHandler }>HEADER</header>
+    <header className="Header">
+      <div className="Header__inner-container container">
+          <Logo/>
+          <h1>I'm a Drupal themer and front-end web developer</h1>
+      </div>
+    </header>
 );
 
 export default header;

@@ -20,10 +20,5 @@ export const checkValidity = ( value, rules ) => {
     isValid = value.length <= rules.maxLength && isValid;
   }
 
-   if ( rules.isEmail ) {
-    const emailRegex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    isValid = emailRegex.test(value);
-  }
-
   return isValid;
 }

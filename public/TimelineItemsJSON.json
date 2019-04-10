@@ -1,17 +1,72 @@
 {
     "event1": {
-        "Date":"01/08/2012",
-        "Title":"Uni",
-        "Location":"Sunshine Coast"
+        "logo":"tes",
+        "start_date":"May 2016",
+        "end_date":"December 2019",
+        "title":"Tes",
+        "location":"Sunshine Coast",
+        "sensorOffset": 500
     }, 
     "event2": {
-        "Date":"01/08/2013",
-        "Title":"Flight Centre",
-        "Location":"Brisbane"
+        "logo":"four",
+        "logo_image":"May 2016",
+        "start_date":"May 2016",
+        "end_date":"December 2019",
+        "title":"Four",
+        "location":"Sunshine Coast",
+        "sensorOffset": 500
     }, 
     "event3": {
-        "Date":"01/08/2015",
-        "Title":"TES",
-        "Location":"London"
-    } 
+        "logo":"usc",
+        "logo_image":"May 2016",
+        "start_date":"May 2016",
+        "end_date":"December 2019",
+        "title":"USC",
+        "location":"Sunshine Coast",
+        "sensorOffset": 500
+    },
+    "event4": {
+        "logo_image":"May 2016",
+        "start_date":"May 2016",
+        "end_date":"December 2019",
+        "title":"Four",
+        "location":"Sunshine Coast",
+        "sensorOffset": 500
+    },
+    "event5": {
+        "logo":"vccp",
+        "logo_image":"May 2016",
+        "start_date":"May 2016",
+        "end_date":"December 2019",
+        "title":"VCCP",
+        "location":"Sunshine Coast",
+        "sensorOffset": 500
+    },
+    "event6": {
+        "logo":"atd",
+        "logo_image":"May 2016",
+        "start_date":"May 2016",
+        "end_date":"December 2019",
+        "title":"ATD",
+        "location":"Sunshine Coast",
+        "sensorOffset": 500
+    },
+    "event7": {
+        "logo":"fc",
+        "logo_image":"May 2016",
+        "start_date":"May 2016",
+        "end_date":"December 2019",
+        "title":"Flight Centre",
+        "location":"Sunshine Coast",
+        "sensorOffset": 500
+    },
+    "event8": {
+        "logo":"fig",
+        "logo_image":"May 2016",
+        "start_date":"May 2016",
+        "end_date":"December 2019",
+        "title":"Fig Creative",
+        "location":"Sunshine Coast",
+        "sensorOffset": 500
+    }
 }

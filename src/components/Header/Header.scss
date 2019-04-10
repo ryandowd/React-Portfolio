@@ -1,0 +1,16 @@
+.Header {
+  background-color: #FFF;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+  h1 {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+}
+
+.Header__inner-container {
+  display: flex;
+  padding: 5px 20px;
+}
