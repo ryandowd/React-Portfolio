@@ -16,6 +16,8 @@ class App extends Component {
   componentDidMount() {
     axios.get('TimelineItemsJSON.json')
       .then(res => {
+        console.info(res.data);
+
         this.setState({
           isLoading: false,
           timelineItemData: res.data

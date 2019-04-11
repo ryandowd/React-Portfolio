@@ -7,10 +7,18 @@
   display: flex;
   margin: 0 auto;
   padding: 30px 50px 30px 100px;
-  width: 80%;
+  width: 60%;
+  box-shadow: 0px 15px 2px -12px rgba(0, 0, 0, 0.1);
 
   &.js-show-item {
     opacity: 1;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0px 20px 2px -10px rgba(0,0,0,0.05)
   }
 }
 
@@ -45,6 +53,32 @@
   }
 }
 
-.TimelineItem__start-date {
-  border: 1px solid red;
+.TimelineItem__end-date {
+  font-size: 1rem;
+  margin-left: 25px;
+  width: 100px;
+  padding-top: 40px;
+  position: relative;
+
+  &:before {
+    content: '';
+    height: 3px;
+    width: 30px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    margin-top: 7px;
+    left: -25px;
+  }
+
+  &:after {
+    content: '';
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    background-color: #000;
+    border-radius: 15px;
+    position: absolute;
+    left: -30px;
+  }
 }

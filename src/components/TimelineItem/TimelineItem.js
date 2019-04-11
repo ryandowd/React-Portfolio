@@ -41,7 +41,7 @@ class TimelineItem extends Component {
     // which joins the timeline items from top to bottom)
     let itemJoiner = (
       <div className={'TimelineItem__joiner' +  itemIsVisible}>
-        <span className="TimelineItem__end-date">{this.props.startDate}</span>
+        <div className="TimelineItem__end-date">{this.props.startDate}</div>
       </div>
     );
 

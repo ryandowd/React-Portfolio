@@ -7,33 +7,33 @@ import "./Timeline.scss";
 
 class Timeline extends Component {
 
-    render () {
+  render () {
 
-        let timelineItems = Object.keys(this.props.timelineItemData)
-            .map( itemKey => {
-                return [...Array(this.props.timelineItemData[itemKey])].map(() => {
-                    return (
-                        <TimelineItem
-                            key={itemKey}
-                            itemKey={itemKey}
-                            logoImage={this.props.timelineItemData[itemKey].logoImage}
-                            title={this.props.timelineItemData[itemKey].title}
-                            location={this.props.timelineItemData[itemKey].location}
-                            startDate={this.props.timelineItemData[itemKey].startDate}
-                            endDate={this.props.timelineItemData[itemKey].endDate}/>
-                        );
-                } );
-            } );
+    let timelineItems = Object.keys(this.props.timelineItemData)
+      .map( itemKey => {
+        return [...Array(this.props.timelineItemData[itemKey])].map(() => {
+          return (
+            <TimelineItem
+              key={itemKey}
+              logoImage={this.props.timelineItemData[itemKey].logoImage}
+              startDate={this.props.timelineItemData[itemKey].startDate}
+              endDate={this.props.timelineItemData[itemKey].endDate}
+              title={this.props.timelineItemData[itemKey].title}
+              location={this.props.timelineItemData[itemKey].location}
+              itemKey={itemKey}/>
+            );
+        } );
+      } );
 
-        return (
-            <div className="container">
-              <Intro />
-              <div className="Timeline">
-                  {timelineItems}
-              </div>
-            </div>
-        );
-    }
+    return (
+      <div className="container">
+        <Intro />
+        <div className="Timeline">
+            {timelineItems}
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Timeline;

@@ -1,58 +1,72 @@
 {
     "1": {
         "logoImage":"me",
-        "startDate":"May 2016",
-        "endDate":"December 2019",
+        "startDate":"August 2016",
+        "endDate":"Today",
         "title":"My own business",
-        "location":"Sunshine Coast"
+        "location":"London, England - Valencia, Spain - Kuala Lumpur, Malaysia - Brisbane, Australia"
     },
     "2": {
         "logoImage":"tes",
         "startDate":"May 2016",
-        "endDate":"December 2019",
+        "endDate":"April 2018",
         "title":"TES",
-        "location":"Sunshine Coast"
+        "location":"London, England"
     },
     "3": {
-        "logoImage":"four",
-        "startDate":"May 2016",
-        "endDate":"December 2019",
-        "title":"Four",
-        "location":"Sunshine Coast"
+        "logoImage":"tes",
+        "startDate":"Aug 2015",
+        "endDate":"December 2015",
+        "title":"TES",
+        "location":"London, England"
     },
     "4": {
-        "logoImage":"vccp",
-        "startDate":"May 2016",
-        "endDate":"December 2019",
-        "title":"VCCP",
-        "location":"Sunshine Coast"
+        "logoImage":"four",
+        "startDate":"Aug 2015",
+        "endDate":"Aug 2015",
+        "title":"Four",
+        "location":"London, England"
     },
     "5": {
-        "logoImage":"atd",
-        "startDate":"May 2016",
-        "endDate":"December 2019",
-        "title":"ATD",
-        "location":"Sunshine Coast"
+        "logoImage":"vccp",
+        "startDate":"Aug 2015",
+        "endDate":"Aug 2015",
+        "title":"VCCP",
+        "location":"London, England"
     },
     "6": {
-        "logoImage":"fc",
-        "startDate":"May 2016",
-        "endDate":"December 2019",
-        "title":"Flight Center",
-        "location":"Sunshine Coast"
+        "logoImage":"atd",
+        "startDate":"Feb 2015",
+        "endDate":"July 2015",
+        "title":"ATD",
+        "location":"London, England"
     },
     "7": {
-        "logoImage":"fig",
-        "startDate":"May 2016",
-        "endDate":"December 2019",
-        "title":"Fig Creative",
-        "location":"Sunshine Coast"
+        "logoImage":"nbcu",
+        "startDate":"Dec 2014",
+        "endDate":"Jan 2015",
+        "title":"NBCU",
+        "location":"London, England"
     },
     "8": {
+        "logoImage":"fc",
+        "startDate":"March 2011",
+        "endDate":"November 2014",
+        "title":"Flight Centre",
+        "location":"Brisbane, Australia"
+    },
+    "9": {
+        "logoImage":"fig",
+        "startDate":"June 2010",
+        "endDate":"April 2011",
+        "title":"Fig Creative",
+        "location":"Sunshine Coast, Australia"
+    },
+    "10": {
         "logoImage":"usc",
-        "startDate":"May 2016",
-        "endDate":"December 2019",
+        "startDate":"2009",
+        "endDate":"2011",
         "title":"USC",
-        "location":"Sunshine Coast"
+        "location":"Sunshine Coast, Australia"
     }
 }
