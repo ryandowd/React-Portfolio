@@ -27,26 +27,29 @@ class TimelineItem extends Component {
 
     // Main timeline fragment
     let timelineItem = (
-      <div className={'TimelineItem' +  itemIsVisible}>
-        <TimelineItemImage logoImage={logoImage}/>
-        <div className='TimelineItem__content'>
-          <div className="TimelineItem__title">{this.props.title}</div>
-          <div className="TimelineItem__dates">{this.props.startDate} - {this.props.endDate}</div>
-          <div className="TimelineItem__location">{this.props.location}</div>
+      <div className="TimelineItem__stack">
+        <div className={'TimelineItem'}>
+          <TimelineItemImage logoImage={logoImage}/>
+          <div className='TimelineItem__content'>
+            <div className="TimelineItem__title">{this.props.title}</div>
+            <div className="TimelineItem__dates">{this.props.startDate} - {this.props.endDate}</div>
+            <div className="TimelineItem__location">{this.props.location}</div>
+          </div>
         </div>
+        <div className="TimelineItem__lower-stack"></div>
       </div>
     );
 
     // The 'joiner' for each item (i.e. the black line with end-date
     // which joins the timeline items from top to bottom)
     let itemJoiner = (
-      <div className={'TimelineItem__joiner' +  itemIsVisible}>
-        <div className="TimelineItem__end-date">{this.props.startDate}</div>
+      <div className={'TimelineItem__joiner'}>
+        <div className="TimelineItem__end-date">{this.props.endDate}</div>
       </div>
     );
 
     // If the item is NOTE the 1st. Then add the itemJoiner to it's 'top'
-    if (this.props.itemKey != 1) {
+    if (parseInt(this.props.itemKey) !== 1) {
       timelineItem = [itemJoiner, timelineItem];
     }
 
@@ -56,7 +59,7 @@ class TimelineItem extends Component {
           onChange={this.onVisibleItem}
           offset={{bottom: offset}}
       >
-        <div>
+        <div className={'TimelineItem__container' + itemIsVisible}>
           {timelineItem}
         </div>
       </VisibilitySensor>

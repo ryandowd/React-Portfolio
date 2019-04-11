@@ -1,5 +1,5 @@
 .Logo {
-  border: 1px solid red;
+  border: 1px solid #000000;
   float: left;
   height: 40px;
   width: 145px;
@@ -10,6 +10,8 @@
   font-weight: bold;
   display: flex;
   padding: 10px 20px;
+  color: #FFF;
+  background-color: #003b4a;
 }
 
 .Logo__me {
