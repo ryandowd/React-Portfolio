@@ -1,32 +1,36 @@
 import React, { Component } from 'react';
 
-import "./Timeline.scss";
 import TimelineItem from "../TimelineItem/TimelineItem";
+import Intro from "../../components/Intro/Intro";
+
+import "./Timeline.scss";
 
 class Timeline extends Component {
 
     render () {
 
         let timelineItems = Object.keys(this.props.timelineItemData)
-            .map( ingredientKey => {
-                return [...Array(this.props.timelineItemData[ingredientKey])].map(() => {
+            .map( itemKey => {
+                return [...Array(this.props.timelineItemData[itemKey])].map(() => {
                     return (
                         <TimelineItem
-                            key={ingredientKey}
-                            start_date={this.props.timelineItemData[ingredientKey].start_date}
-                            end_date={this.props.timelineItemData[ingredientKey].end_date}
-                            title={this.props.timelineItemData[ingredientKey].title}
-                            location={this.props.timelineItemData[ingredientKey].location}
-                            sensorOffset={this.props.timelineItemData[ingredientKey].sensorOffset}/>
+                            key={itemKey}
+                            itemKey={itemKey}
+                            logoImage={this.props.timelineItemData[itemKey].logoImage}
+                            title={this.props.timelineItemData[itemKey].title}
+                            location={this.props.timelineItemData[itemKey].location}
+                            startDate={this.props.timelineItemData[itemKey].startDate}
+                            endDate={this.props.timelineItemData[itemKey].endDate}/>
                         );
                 } );
             } );
 
         return (
             <div className="container">
-                <div className="Timeline">
-                    {timelineItems}
-                </div>
+              <Intro />
+              <div className="Timeline">
+                  {timelineItems}
+              </div>
             </div>
         );
     }

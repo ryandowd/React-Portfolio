@@ -2,41 +2,64 @@ import React, { Component } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 
 import './TimelineItem.scss';
+import TimelineItemImage from "./TimelineItemImage/TimelineItemImage";
 
 class TimelineItem extends Component {
 
   state = {
-    visible: false
+    itemVisible: false
   };
 
-  onChange = ( isVisible ) => {
+  // Callback from 'VisibilitySensor'. Used in 'itemIsVisible' to add 'js-show-item' class
+  onVisibleItem = ( isVisible ) => {
     if (isVisible) {
-      this.setState({ visible: true });
+      this.setState({ itemVisible: true });
     }
   };
 
+
   render () {
 
-    let visibilityClass = this.state.visible ? ' js-show-item' : '';
-    let sensorOffset = this.props.SensorOffset;
-    let itemImageSrc = this.props.title.toLowerCase() + '-logo.png';
+    let itemIsVisible = this.state.itemVisible ? ' js-show-item' : '';
+    let itemImageSrc = this.props.logoImage.toLowerCase() + '-logo.png';
     let logoImage = require('../../assets/images/' + itemImageSrc);
+    let offset = 450;
+
+    // Main timeline fragment
+    let timelineItem = (
+      <div className={'TimelineItem' +  itemIsVisible}>
+        <TimelineItemImage logoImage={logoImage}/>
+        <div className='TimelineItem__content'>
+          <div className="TimelineItem__title">{this.props.title}</div>
+          <div className="TimelineItem__dates">{this.props.startDate} - {this.props.endDate}</div>
+          <div className="TimelineItem__location">{this.props.location}</div>
+        </div>
+      </div>
+    );
+
+    // The 'joiner' for each item (i.e. the black line with end-date
+    // which joins the timeline items from top to bottom)
+    let itemJoiner = (
+      <div className={'TimelineItem__joiner' +  itemIsVisible}>
+        <span className="TimelineItem__end-date">{this.props.startDate}</span>
+      </div>
+    );
+
+    // If the item is NOTE the 1st. Then add the itemJoiner to it's 'top'
+    if (this.props.itemKey != 1) {
+      timelineItem = [itemJoiner, timelineItem];
+    }
 
     return (
-        <VisibilitySensor
-            partialVisibility={true}
-            onChange={this.onChange}
-            offset={{bottom:sensorOffset}}
-          >
-          <div className={'TimelineItem' +  visibilityClass}>
-            <img src={logoImage} />
-            {this.props.start_date}
-            {this.props.end_date}
-            {this.props.title}
-            {this.props.location}
-
-          </div>
-        </VisibilitySensor>
+      <VisibilitySensor
+          partialVisibility={true}
+          onChange={this.onVisibleItem}
+          offset={{bottom: offset}}
+      >
+        <div>
+          {timelineItem}
+        </div>
+      </VisibilitySensor>
     );
   };
 

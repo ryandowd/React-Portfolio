@@ -1,72 +1,58 @@
 {
-    "event1": {
-        "logo":"tes",
-        "start_date":"May 2016",
-        "end_date":"December 2019",
-        "title":"Tes",
-        "location":"Sunshine Coast",
-        "sensorOffset": 500
-    }, 
-    "event2": {
-        "logo":"four",
-        "logo_image":"May 2016",
-        "start_date":"May 2016",
-        "end_date":"December 2019",
-        "title":"Four",
-        "location":"Sunshine Coast",
-        "sensorOffset": 500
-    }, 
-    "event3": {
-        "logo":"usc",
-        "logo_image":"May 2016",
-        "start_date":"May 2016",
-        "end_date":"December 2019",
-        "title":"USC",
-        "location":"Sunshine Coast",
-        "sensorOffset": 500
+    "1": {
+        "logoImage":"me",
+        "startDate":"May 2016",
+        "endDate":"December 2019",
+        "title":"My own business",
+        "location":"Sunshine Coast"
     },
-    "event4": {
-        "logo_image":"May 2016",
-        "start_date":"May 2016",
-        "end_date":"December 2019",
-        "title":"Four",
-        "location":"Sunshine Coast",
-        "sensorOffset": 500
+    "2": {
+        "logoImage":"tes",
+        "startDate":"May 2016",
+        "endDate":"December 2019",
+        "title":"TES",
+        "location":"Sunshine Coast"
     },
-    "event5": {
-        "logo":"vccp",
-        "logo_image":"May 2016",
-        "start_date":"May 2016",
-        "end_date":"December 2019",
+    "3": {
+        "logoImage":"four",
+        "startDate":"May 2016",
+        "endDate":"December 2019",
+        "title":"Four",
+        "location":"Sunshine Coast"
+    },
+    "4": {
+        "logoImage":"vccp",
+        "startDate":"May 2016",
+        "endDate":"December 2019",
         "title":"VCCP",
-        "location":"Sunshine Coast",
-        "sensorOffset": 500
+        "location":"Sunshine Coast"
     },
-    "event6": {
-        "logo":"atd",
-        "logo_image":"May 2016",
-        "start_date":"May 2016",
-        "end_date":"December 2019",
+    "5": {
+        "logoImage":"atd",
+        "startDate":"May 2016",
+        "endDate":"December 2019",
         "title":"ATD",
-        "location":"Sunshine Coast",
-        "sensorOffset": 500
+        "location":"Sunshine Coast"
     },
-    "event7": {
-        "logo":"fc",
-        "logo_image":"May 2016",
-        "start_date":"May 2016",
-        "end_date":"December 2019",
-        "title":"Flight Centre",
-        "location":"Sunshine Coast",
-        "sensorOffset": 500
+    "6": {
+        "logoImage":"fc",
+        "startDate":"May 2016",
+        "endDate":"December 2019",
+        "title":"Flight Center",
+        "location":"Sunshine Coast"
     },
-    "event8": {
-        "logo":"fig",
-        "logo_image":"May 2016",
-        "start_date":"May 2016",
-        "end_date":"December 2019",
+    "7": {
+        "logoImage":"fig",
+        "startDate":"May 2016",
+        "endDate":"December 2019",
         "title":"Fig Creative",
-        "location":"Sunshine Coast",
-        "sensorOffset": 500
+        "location":"Sunshine Coast"
+    },
+    "8": {
+        "logoImage":"usc",
+        "startDate":"May 2016",
+        "endDate":"December 2019",
+        "title":"USC",
+        "location":"Sunshine Coast"
     }
 }

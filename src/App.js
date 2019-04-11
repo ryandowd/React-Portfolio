@@ -27,7 +27,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header/>
+        <Header />
         { !this.state.isLoading ? <Timeline timelineItemData={this.state.timelineItemData}/> : <span>Still Loading...</span> }
       </div>
     );
