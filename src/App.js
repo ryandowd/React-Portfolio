@@ -3,24 +3,25 @@ import axios from 'axios';
 
 import './App.scss';
 
-import Header from "./components/Header/Header";
+// import Header from "./components/Header/Header";
+import Intro from "./components/Intro/Intro";
 import Timeline from "./components/Timeline/Timeline";
 
 class App extends Component {
 
   state = {
     isLoading: true,
-    timelineItemData: null
+    timelineCardData: null
   };
 
   componentDidMount() {
-    axios.get('TimelineItemsJSON.json')
+    axios.get('TimelineCards.json')
       .then(res => {
         console.info(res.data);
 
         this.setState({
           isLoading: false,
-          timelineItemData: res.data
+          timelineCardData: res.data
         });
       })
   };
@@ -29,8 +30,8 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header />
-        { !this.state.isLoading ? <Timeline timelineItemData={this.state.timelineItemData}/> : <span>Still Loading...</span> }
+        <Intro />
+        { !this.state.isLoading ? <Timeline timelineCardData={this.state.timelineCardData}/> : <span>Still Loading...</span> }
       </div>
     );
     

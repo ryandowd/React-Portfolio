@@ -3,8 +3,10 @@
         "logoImage":"me",
         "startDate":"August 2016",
         "endDate":"Today",
-        "title":"My own business",
-        "location":"London, England - Valencia, Spain - Kuala Lumpur, Malaysia - Brisbane, Australiawidth: max-content;"
+        "title":"Freelance & Ecommerce",
+        "location":"London, England - Valencia, Spain - Kuala Lumpur, Malaysia - Brisbane, Australia",
+        "spiel": "Since May of 2018, I've been travelling and earning through my e-commerce store, along with various freelance jobs. I built the ecommerce store with my wife (who is in marketing) in 2015 and slowly, year on year, it's earning more. The store is built on the Shopify platform and it's been a great way for me to learn all aspects of owning and running a business on Shopify (not just the web development side of Shopify). I have also been completing a handful of Freelance jobs working on Drupal 8, Shopify and BigCommerce.",
+        "techlist": ["asd", "asdddd", "123"]
     },
     "2": {
         "logoImage":"tes",
