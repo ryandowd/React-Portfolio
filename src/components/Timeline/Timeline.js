@@ -20,7 +20,8 @@ class Timeline extends Component {
               endDate={this.props.timelineCardData[cardKey].endDate}
               title={this.props.timelineCardData[cardKey].title}
               location={this.props.timelineCardData[cardKey].location}
-              spiel={this.props.timelineCardData[cardKey].spiel}
+              description={this.props.timelineCardData[cardKey].description}
+              techlist={this.props.timelineCardData[cardKey].techlist}
               cardKey={cardKey}/>
             );
         } );

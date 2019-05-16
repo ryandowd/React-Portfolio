@@ -1,74 +1,83 @@
 {
-    "1": {
+    "card1": {
         "logoImage":"me",
-        "startDate":"August 2016",
+        "startDate":"August 2018",
         "endDate":"Today",
         "title":"Freelance & Ecommerce",
-        "location":"London, England - Valencia, Spain - Kuala Lumpur, Malaysia - Brisbane, Australia",
-        "spiel": "Since May of 2018, I've been travelling and earning through my e-commerce store, along with various freelance jobs. I built the ecommerce store with my wife (who is in marketing) in 2015 and slowly, year on year, it's earning more. The store is built on the Shopify platform and it's been a great way for me to learn all aspects of owning and running a business on Shopify (not just the web development side of Shopify). I have also been completing a handful of Freelance jobs working on Drupal 8, Shopify and BigCommerce.",
-        "techlist": ["asd", "asdddd", "123"]
+        "location": "England, Spain, Malaysia, Australia",
+        "description": "Since May of 2018, I've been travelling and earning through my e-commerce store, along with a handful of freelance web development jobs. I built the store in 2016 and run it with help from my wife (who is in marketing). Slowly, year on year, it's increased revenue has allowed us to live and work in various 'cheaper' countries. My ecommerce store is built on the Shopify platform and it's been a great way for me to learn all aspects of owning and running a business on Shopify (not just the web development side of Shopify). My freelance work has involved short-term 'Drupal 8', 'Shopify' and 'Big Commerce' projects, while in my freetime I've been learning React.",
+        "techlist": ["shopify", "drupal8", "bigcommerce", "react", "es6"]
     },
-    "2": {
+    "card2": {
         "logoImage":"tes",
         "startDate":"May 2016",
         "endDate":"April 2018",
         "title":"TES",
-        "location":"London, England"
+        "location": "England",
+        "techlist": ["drupal7", "drupal8", "jquery"]
     },
-    "3": {
+    "card3": {
         "logoImage":"tes",
         "startDate":"Aug 2015",
         "endDate":"December 2015",
         "title":"TES",
-        "location":"London, England"
+        "location": "England",
+        "techlist": ["drupal7", "jquery"]
     },
-    "4": {
+    "card4": {
         "logoImage":"four",
         "startDate":"Aug 2015",
         "endDate":"Aug 2015",
         "title":"Four",
-        "location":"London, England"
+        "location": "England",
+        "techlist": ["drupal7", "jquery"]
     },
-    "5": {
+    "card5": {
         "logoImage":"vccp",
         "startDate":"Aug 2015",
         "endDate":"Aug 2015",
         "title":"VCCP",
-        "location":"London, England"
+        "location": "England",
+        "techlist": ["drupal7", "jquery"]
     },
-    "6": {
+    "card6": {
         "logoImage":"atd",
         "startDate":"Feb 2015",
         "endDate":"July 2015",
         "title":"ATD",
-        "location":"London, England"
+        "location": "England",
+        "techlist": ["drupal6", "jquery"]
     },
-    "7": {
+    "card7": {
         "logoImage":"nbcu",
         "startDate":"Dec 2014",
         "endDate":"Jan 2015",
         "title":"NBCU",
-        "location":"London, England"
+        "location": "England",
+        "techlist": ["drupal7", "jquery"]
     },
-    "8": {
+    "card8": {
         "logoImage":"fc",
         "startDate":"March 2011",
         "endDate":"November 2014",
         "title":"Flight Centre",
-        "location":"Brisbane, Australia"
+        "location": "Australia",
+        "techlist": ["html5", "css3", "jquery"]
     },
-    "9": {
+    "card9": {
         "logoImage":"fig",
         "startDate":"June 2010",
         "endDate":"April 2011",
         "title":"Fig Creative",
-        "location":"Sunshine Coast, Australia"
+        "location": "Australia",
+        "techlist": ["html5", "css3", "jquery"]
     },
-    "10": {
+    "card10": {
         "logoImage":"usc",
         "startDate":"2009",
         "endDate":"2011",
         "title":"USC",
-        "location":"Sunshine Coast, Australia"
+        "location": "Australia",
+        "techlist": ["html", "css", "jquery"]
     }
 }

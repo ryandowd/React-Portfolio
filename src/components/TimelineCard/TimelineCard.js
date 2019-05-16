@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
+import { getImage } from '../../shared/utility';
 
 import './TimelineCard.scss';
 import TimelineCardImage from "./TimelineCardImage/TimelineCardImage";
+import TimelineCardTechlist from "./TimelineCardTechlist/TimelineCardTechlist";
 
 class TimelineCard extends Component {
 
@@ -11,7 +13,7 @@ class TimelineCard extends Component {
     cardClicked: false
   };
 
-  // Callback from 'VisibilitySensor'. Used in 'itemIsVisible' to add 'js-show-item' class
+  // Callback from <VisibilitySensor>. Used in 'itemIsVisible' to add 'js-show-item' class
   onVisibleCard = ( isVisible ) => {
     if (isVisible) {
       this.setState({ cardVisible: true });
@@ -29,9 +31,7 @@ class TimelineCard extends Component {
   render () {
 
     let classes = [];
-    let cardImageSrc = this.props.logoImage.toLowerCase() + '-logo.png';
-    let logoImage = require('../../assets/images/' + cardImageSrc);
-    let offset = 350;
+    const offset = 350;
 
     // Toggle classes for 'show' or 'expand'
     if (this.state.cardVisible && this.state.cardClicked) {
@@ -44,38 +44,44 @@ class TimelineCard extends Component {
     let timelineCard = (
       <article className="TimelineCard__stack" onClick={(e) => this.onCardClicked(e)}>
         <div className={'TimelineCard TimelineCard__top-card'}>
-          <TimelineCardImage logoImage={logoImage}/>
-          <div className='TimelineCard__content'>
-            <div className="TimelineCard__title">{this.props.title}</div>
-            <div className="TimelineCard__dates">{this.props.startDate} - {this.props.endDate}</div>
-            <div className="TimelineCard__location">{this.props.location}</div>
+          <div>
+            <TimelineCardImage logoImage={getImage(this.props.logoImage, 'logo')} />
+            <div className='TimelineCard__content'>
+              <div className="TimelineCard__title">{this.props.title}</div>
+              <div className="TimelineCard__dates">{this.props.startDate} - {this.props.endDate}</div>
+              <ul className="TimelineCard__locations">
+               {this.props.location}
+              </ul>
+            </div>
+          </div>
+          <div className="TimelineCard__techlist">
+            { this.state.cardClicked ? <TimelineCardTechlist techlist={this.props.techlist} /> : '' }
           </div>
         </div>
         <div className="TimelineCard TimelineCard__bottom-card">
-          <p className="TimelineCard__spiel">{this.props.spiel}</p>
+          <p className="TimelineCard__description">{this.props.description}</p>
         </div>
       </article>
     );
 
-    // The 'joiner' for each item (i.e. the black line with end-date
-    // which joins the timeline items from top to bottom)
+    // Create the 'joiner' for each timeline card (i.e. the black line with end-date
+    // which joins the timeline cards from top to bottom)
     let cardJoiner = (
       <div className={'TimelineCard__joiner'}>
         <div className="TimelineCard__end-date">{this.props.endDate}</div>
       </div>
     );
 
-    // Add the timeline card joiner to all items except the first item
-    if (parseInt(this.props.cardKey) !== 1) {
+    // Add the timeline card 'joiner' to all cards except the first item
+    if (parseInt(this.props.cardKey.slice(-1)) !== 1) {
       timelineCard = [cardJoiner, timelineCard];
     }
 
     return (
       <VisibilitySensor
-          partialVisibility={true}
-          onChange={this.onVisibleCard}
-          offset={{bottom: offset}}
-      >
+        partialVisibility={true}
+        onChange={this.onVisibleCard}
+        offset={{bottom: offset}}>
         <div className={'TimelineCard__container ' + classes.join(' ')}>
           {timelineCard}
         </div>
