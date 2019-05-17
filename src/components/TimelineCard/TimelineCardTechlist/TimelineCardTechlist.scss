@@ -1,20 +1,23 @@
 .Techlist {
-  list-style: none;
   margin: 0;
   padding: 0;
-  opacity: 0;
-  height: 0;
-  transition: opacity 0.5s, height 0.5s;
-
-  .js-expand-card & {
-    opacity: 1;
-    height: 100%;
-  }
+  list-style: none;
 }
 
 .Techlist .Techlist__item {
+  float: left;
+  padding: 6px;
+
+  @media (min-width: 1200px) {
+    padding: 10px;
+  }
+
   img {
-    width: 100px;
-    height: auto;
+    width: auto;
+    height: 35px;
+
+    @media (min-width: 1200px) {
+      height: 75px;
+    }
   }
 }

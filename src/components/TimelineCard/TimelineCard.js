@@ -20,6 +20,7 @@ class TimelineCard extends Component {
     }
   };
 
+  // Callback to update state when TimelineCard is clicked 
   onCardClicked = ( e ) => {
     if (this.state.cardClicked) {
       this.setState({ cardClicked: false });
@@ -31,7 +32,7 @@ class TimelineCard extends Component {
   render () {
 
     let classes = [];
-    const offset = 350;
+    const offset = 200;
 
     // Toggle classes for 'show' or 'expand'
     if (this.state.cardVisible && this.state.cardClicked) {
@@ -44,15 +45,13 @@ class TimelineCard extends Component {
     let timelineCard = (
       <article className="TimelineCard__stack" onClick={(e) => this.onCardClicked(e)}>
         <div className={'TimelineCard TimelineCard__top-card'}>
-          <div>
-            <TimelineCardImage logoImage={getImage(this.props.logoImage, 'logo')} />
-            <div className='TimelineCard__content'>
-              <div className="TimelineCard__title">{this.props.title}</div>
-              <div className="TimelineCard__dates">{this.props.startDate} - {this.props.endDate}</div>
-              <ul className="TimelineCard__locations">
-               {this.props.location}
-              </ul>
-            </div>
+          <TimelineCardImage logoImage={getImage(this.props.logoImage, 'logo')} />
+          <div className='TimelineCard__details'>
+            <div className="TimelineCard__title">{this.props.title}</div>
+            <div className="TimelineCard__dates">{this.props.startDate} - {this.props.endDate}</div>
+            <ul className="TimelineCard__locations">
+             {this.props.location}
+            </ul>
           </div>
           <div className="TimelineCard__techlist">
             { this.state.cardClicked ? <TimelineCardTechlist techlist={this.props.techlist} /> : '' }
@@ -68,7 +67,7 @@ class TimelineCard extends Component {
     // which joins the timeline cards from top to bottom)
     let cardJoiner = (
       <div className={'TimelineCard__joiner'}>
-        <div className="TimelineCard__end-date">{this.props.endDate}</div>
+        <div className="TimelineCard__joiner-date">{this.props.endDate}</div>
       </div>
     );
 

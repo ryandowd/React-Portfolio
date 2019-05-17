@@ -1,5 +1,9 @@
 .Timeline {
-  margin: 50px auto 400px;
-  float: right;
-  width: 60%;
+  margin: 70px auto 400px;
+
+  @media (min-width: 900px) { 
+    margin-top: 100px;
+    width: 60%;
+    float: right;
+  }
 }

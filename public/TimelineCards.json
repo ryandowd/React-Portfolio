@@ -5,7 +5,7 @@
         "endDate":"Today",
         "title":"Freelance & Ecommerce",
         "location": "England, Spain, Malaysia, Australia",
-        "description": "Since May of 2018, I've been travelling and earning through my e-commerce store, along with a handful of freelance web development jobs. I built the store in 2016 and run it with help from my wife (who is in marketing). Slowly, year on year, it's increased revenue has allowed us to live and work in various 'cheaper' countries. My ecommerce store is built on the Shopify platform and it's been a great way for me to learn all aspects of owning and running a business on Shopify (not just the web development side of Shopify). My freelance work has involved short-term 'Drupal 8', 'Shopify' and 'Big Commerce' projects, while in my freetime I've been learning React.",
+        "description": "For the past year I've had the (long-awaited) opportunity to visit my home country of Australia, as well as a handful of other countries. I was able to earn through my own ecommerce store which I built in 2016 and run with my wife (who is in marketing). The store is built on the Shopify platform and it's been a great way for me to learn all aspects of owning and running a business (not just the development side of Shopify). My freelance work has involved short-term 'Drupal 8', 'Shopify' and 'Big Commerce' projects, while in my freetime I've been learning React. Despite the success of the store and our fun travelling, my wife and I want to put our roots down, sell the store and focus on our careers in the UK.",
         "techlist": ["shopify", "drupal8", "bigcommerce", "react", "es6"]
     },
     "card2": {
@@ -14,7 +14,8 @@
         "endDate":"April 2018",
         "title":"TES",
         "location": "England",
-        "techlist": ["drupal7", "drupal8", "jquery"]
+        "description": "At TES, I implemented various features and upgrades to a fully-responsive Drupal 7 website 'Times Higher Education' which received 32.7 million in 2017. I was the lead front-end developer on this project before moving onto a green-fields Drupal 8 project for the TES Global website. My day-to-day included liasing with the designers, project managers and back-end developers, then implementing feature upgrades including new pages, widgets and redesigns into the Drupal 7 & 8 platforms, working daily with front-end and back-end technologies. These included all the latest responsive web standards (HTML5, CSS3, Flexbox) and tools such as SASS/SCSS, NPM, Docker, etc.",
+        "techlist": ["drupal7", "drupal8", "php", "sass", "bootstrap"]
     },
     "card3": {
         "logoImage":"tes",
@@ -22,31 +23,35 @@
         "endDate":"December 2015",
         "title":"TES",
         "location": "England",
-        "techlist": ["drupal7", "jquery"]
+        "description": "When I began my time at TES, the 'Times Higher Education' website was being re-built on a Drupal 7 platform. I was brought on as one of two front-end developers, in a small team of back-end developers, to help with the rebuild. Here I worked with the Drupal 7 platform on a daily basis, including site-building tasks such as working with modules, views and templates to match the designers mockups, and making sure these pages worked as a fully-responsive website, implementing UI features with jQuery, and also regression testing these changes with the 'Wraith' testing tool.", 
+        "techlist": ["drupal7", "jquery", "sass", "php", "bootstrap"]
     },
     "card4": {
         "logoImage":"four",
         "startDate":"Aug 2015",
         "endDate":"Aug 2015",
-        "title":"Four",
+        "title":"Four (Agency)",
         "location": "England",
-        "techlist": ["drupal7", "jquery"]
+        "description": "This was a 2-day contract in which I helped complete a Drupal 7 redesign. Here I worked with the standard technologies on the fully-responsive website, such as SASS, jQuery and Bootstrap 3.",
+        "techlist": ["drupal7", "jquery", "sass", "bootstrap"]
     },
     "card5": {
         "logoImage":"vccp",
         "startDate":"Aug 2015",
         "endDate":"Aug 2015",
-        "title":"VCCP",
+        "title":"VCCP (Agency)",
+        "description": "Here I worked on a 10-day contract to complete a new Drupal 7 website. I worked with marketing, design, UX and back-end developers to successfully complete the project scope on time.",
         "location": "England",
-        "techlist": ["drupal7", "jquery"]
+        "techlist": ["drupal7", "jquery", "less", "bootstrap"]
     },
     "card6": {
         "logoImage":"atd",
         "startDate":"Feb 2015",
         "endDate":"July 2015",
-        "title":"ATD",
+        "title":"Attraction Tickets Direct",
         "location": "England",
-        "techlist": ["drupal6", "jquery"]
+        "description": "I worked at ATD to help transform their non-responsive website into a responsive website. It included working with SASS, jQuery and Drupal 6. The update required lots of device testing. I also implemented various A/B tests to guage the success of new features and designs.",
+        "techlist": ["drupal6", "jquery", "sass", "bootstrap"]
     },
     "card7": {
         "logoImage":"nbcu",
@@ -54,7 +59,8 @@
         "endDate":"Jan 2015",
         "title":"NBCU",
         "location": "England",
-        "techlist": ["drupal7", "jquery"]
+        "description": "I was brought on to the NBCU team to help complete the build of thier redesigned 'Syfy' website on a Drupal 7 platform. Here I worked along-side a senior front-end developer, a designer and back-end developers to finish the project on time and in scope.",
+        "techlist": ["drupal7", "jquery", "sass", "bootstrap"]
     },
     "card8": {
         "logoImage":"fc",
@@ -62,7 +68,8 @@
         "endDate":"November 2014",
         "title":"Flight Centre",
         "location": "Australia",
-        "techlist": ["html5", "css3", "jquery"]
+        "description": "I began working here as a junior front-end developer in 2011, updating various brand websites through their legacy 'WCM' platform. By 2014, I had spent a year building and updating their flight booking app (a JS app built with JSMVC), a bespoke travel-agent web app (JSMVC), and a year working on their Drupal 7 websites. My time at Flight Centre was formative.",
+        "techlist": ["html5", "css3", "jquery", "jsmvc", "drupal7"]
     },
     "card9": {
         "logoImage":"fig",
@@ -70,6 +77,7 @@
         "endDate":"April 2011",
         "title":"Fig Creative",
         "location": "Australia",
+        "description": "Fig Creative was my first web development job which I began in the middle of my degree at university. It was a 'ma and pa' web agency which catered for small businesses in the local town. My job was part web developer (building sites in Wordpress, Concrete 5, static HTML) and part designer (creating logos, webpage mockups and printed brochures).",
         "techlist": ["html5", "css3", "jquery"]
     },
     "card10": {
@@ -78,6 +86,7 @@
         "endDate":"2011",
         "title":"USC",
         "location": "Australia",
-        "techlist": ["html", "css", "jquery"]
+        "description": "At university, I comleted a 'Dual Degree in Electronic Media & Digital Design' and received a high distinction for both my design & programming portfolios for the final year. My programming portfolio included a bespoke game which I built in ActionScript 3 along with many nights on StackOverflow.",
+        "techlist": ["html", "css", "jquery", "as3"]
     }
 }

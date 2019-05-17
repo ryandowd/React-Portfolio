@@ -3,9 +3,10 @@ import axios from 'axios';
 
 import './App.scss';
 
-// import Header from "./components/Header/Header";
+import Menu from "./components/Menu/Menu";
 import Intro from "./components/Intro/Intro";
 import Timeline from "./components/Timeline/Timeline";
+import Loading from "./components/UI/Loading/Loading";
 
 class App extends Component {
 
@@ -28,10 +29,20 @@ class App extends Component {
 
   render() {
 
+    const content = (
+      <React.Fragment>
+        <div className="Sidebar__container">
+          <Menu />
+          <Intro />
+        </div>
+        <Timeline timelineCardData={this.state.timelineCardData}/>
+      </React.Fragment>
+    );
+
     return (
       <div className="App">
-        <Intro />
-        { !this.state.isLoading ? <Timeline timelineCardData={this.state.timelineCardData}/> : <span>Still Loading...</span> }
+        
+        { !this.state.isLoading ? content : <Loading /> }
       </div>
     );
     

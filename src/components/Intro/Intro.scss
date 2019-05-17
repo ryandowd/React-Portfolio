@@ -1,7 +1,45 @@
 .Intro {
-  width: 40%;
-  padding: 50px 100px;
-  background-color: lightblue;
-  position: fixed;
-  min-height: 100%;
+  padding: 40px 5vw;
+  background-color: #add8e6;
+
+  @media (min-width: 600px) {
+    padding: 40px 50px 40px 70px;
+  }
+}
+
+.Intro__list {
+  margin: 30px 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.Intro__heading {
+  text-align: center;
+  font-size: 1.3rem;
+
+  @media (min-width: 1200px) {
+    font-size: 1.75rem;
+  }
+
+  @media (min-width: 900px) {
+    text-align: inherit;
+  }
+}
+
+.Intro__list-item {
+  font-size: 20px;
+  position: relative;
+  margin-top: 10px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    width: 7px;
+    height: 7px;
+    top: 11px;
+    left: -20px;
+    transform: translateY(-50%) rotate(-45deg);
+  }
 }
