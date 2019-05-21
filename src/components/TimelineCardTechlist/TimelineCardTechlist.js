@@ -1,5 +1,5 @@
 import React from 'react';
-import { getImage } from '../../../shared/utility';
+import { getImage } from '../../shared/utility';
 
 import './TimelineCardTechlist.scss';
 

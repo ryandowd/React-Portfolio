@@ -3,8 +3,8 @@ import VisibilitySensor from 'react-visibility-sensor';
 import { getImage } from '../../shared/utility';
 
 import './TimelineCard.scss';
-import TimelineCardImage from "./TimelineCardImage/TimelineCardImage";
-import TimelineCardTechlist from "./TimelineCardTechlist/TimelineCardTechlist";
+import TimelineCardImage from "../../components/TimelineCardImage/TimelineCardImage";
+import TimelineCardTechlist from "../../components/TimelineCardTechlist/TimelineCardTechlist";
 
 class TimelineCard extends Component {
 
