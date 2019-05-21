@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './Loading.scss';
+import './Loading.scss';
 
 const loading = () => (
   <div className="Loading">Loading...</div>

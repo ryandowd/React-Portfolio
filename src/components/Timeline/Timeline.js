@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import TimelineCard from "../TimelineCard/TimelineCard";
-import Intro from "../../components/Intro/Intro";
 
 import "./Timeline.scss";
 
