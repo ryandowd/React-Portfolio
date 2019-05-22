@@ -43,7 +43,7 @@ class TimelineCard extends Component {
 
     // Main timeline fragment
     let timelineCard = (
-      <article className="TimelineCard__stack" onClick={(e) => this.onCardClicked(e)}>
+      <article className="TimelineCard__stack" onClick={(e) => this.onCardClicked(e)} key={this.props.id}>
         <div className={'TimelineCard TimelineCard__top-card'}>
           <TimelineCardImage logoImage={getImage(this.props.logoImage, 'logo')} />
           <div className='TimelineCard__details'>
@@ -66,13 +66,14 @@ class TimelineCard extends Component {
     // Create the 'joiner' for each timeline card (i.e. the black line with end-date
     // which joins the timeline cards from top to bottom)
     let cardJoiner = (
-      <div className={'TimelineCard__joiner'}>
+      <div className={'TimelineCard__joiner'} key={this.props.id + '_joiner'}>
         <div className="TimelineCard__joiner-date">{this.props.endDate}</div>
       </div>
     );
 
     // Add the timeline card 'joiner' to all cards except the first item
-    if (parseInt(this.props.cardKey.slice(-1)) !== 1) {
+
+    if (parseInt(this.props.cardIndex) != 0) {
       timelineCard = [cardJoiner, timelineCard];
     }
 
