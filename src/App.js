@@ -18,8 +18,6 @@ class App extends Component {
   componentDidMount() {
     axios.get('TimelineCards.json')
       .then(res => {
-        console.info(res.data);
-
         this.setState({
           isLoading: false,
           timelineCardData: res.data
@@ -41,7 +39,6 @@ class App extends Component {
 
     return (
       <div className="App">
-        
         { !this.state.isLoading ? content : <Loading /> }
       </div>
     );
