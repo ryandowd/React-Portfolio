@@ -15,7 +15,7 @@ class Timeline extends Component {
           return (
               <TimelineCard
                 key={key}
-                id={key}
+                cardId={key}
                 logoImage={card.logoImage}
                 startDate={card.startDate}
                 endDate={card.endDate}

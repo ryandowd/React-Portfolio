@@ -14,14 +14,14 @@ class TimelineCard extends Component {
   };
 
   // Callback from <VisibilitySensor>. Used in 'itemIsVisible' to add 'js-show-item' class
-  onVisibleCard = ( isVisible ) => {
+  onVisibleCard = isVisible => {
     if (isVisible) {
       this.setState({ cardVisible: true });
     }
   };
 
   // Callback to update state when TimelineCard is clicked 
-  onCardClicked = ( e ) => {
+  onCardClicked = () => {
     if (this.state.cardClicked) {
       this.setState({ cardClicked: false });
     } else {
@@ -43,7 +43,7 @@ class TimelineCard extends Component {
 
     // Main timeline fragment
     let timelineCard = (
-      <article className="TimelineCard__stack" onClick={(e) => this.onCardClicked(e)} key={this.props.id}>
+      <article className="TimelineCard__stack" onClick={this.onCardClicked} key={this.props.cardId}>
         <div className={'TimelineCard TimelineCard__top-card'}>
           <TimelineCardImage logoImage={getImage(this.props.logoImage, 'logo')} />
           <div className='TimelineCard__details'>
@@ -66,7 +66,7 @@ class TimelineCard extends Component {
     // Create the 'joiner' for each timeline card (i.e. the black line with end-date
     // which joins the timeline cards from top to bottom)
     let cardJoiner = (
-      <div className={'TimelineCard__joiner'} key={this.props.id + '_joiner'}>
+      <div className={'TimelineCard__joiner'} key={this.props.cardId + '_joiner'}>
         <div className="TimelineCard__joiner-date">{this.props.endDate}</div>
       </div>
     );
