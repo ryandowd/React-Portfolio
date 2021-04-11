@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 import { getImage } from '../../shared/utility';
 
 import CardImage from "../../components/CardImage";
@@ -20,7 +21,7 @@ const CardContent = (props) => {
         description 
     } = props;
 
-    console.log(techlist, 'techlist')
+    const showChecklistClass = cardClicked ? 'js-fadeIn' : '';
 
     return (
         <article className="Card__stack" onClick={onCardClicked} key={cardId}>
@@ -35,8 +36,8 @@ const CardContent = (props) => {
                     </ul>
                 </div>
             </header>
-            <div className="Card__techlist">
-                { cardClicked ? <CardTechlist techlist={techlist} /> : '' }
+            <div className={classnames(['CardTechlist__container', showChecklistClass])}>
+                <CardTechlist techlist={techlist} />
             </div>
             </div>
             <div className="Card Card__right">

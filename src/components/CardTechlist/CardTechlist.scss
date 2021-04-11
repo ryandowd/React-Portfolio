@@ -1,22 +1,35 @@
+.CardTechlist__container {
+  opacity: 0;
+  transition: all 0.2s;
+  
+  @media (min-width: 1200px) { 
+      position: absolute;
+      top: 120px;
+  }
+}
+
 .CardTechlist {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   padding: 0;
   opacity: 0;
   margin: 5px 0 0;
   transition: opacity 2s;
-  width: 285px;
+  width: 100%;
 
-  @media (min-width: 700px) {
-    clear: both;
-    margin-left: 20px;
-  }
+  // @media (min-width: 700px) {
+  //   clear: both;
+  //   // margin-left: 10px;
+  // }
 
   @media (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
     margin-top: 50px;
+    justify-content: space-around;
+
   }
 
   .js-expand-card & {

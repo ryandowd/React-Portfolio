@@ -15,7 +15,9 @@ class TimelineCard extends Component {
 
   // Callback from <VisibilitySensor>. Used in 'itemIsVisible' to add 'js-show-item' class
   onVisibleCard = isVisible => {
-    this.setState({ cardVisible: isVisible });
+    if (isVisible) {
+      this.setState({ cardVisible: true });
+    }
   };
 
   // Callback to update state when TimelineCard is clicked 
