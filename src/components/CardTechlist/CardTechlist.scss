@@ -1,0 +1,42 @@
+.CardTechlist {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  opacity: 0;
+  margin: 5px 0 0;
+  transition: opacity 2s;
+  width: 285px;
+
+  @media (min-width: 700px) {
+    clear: both;
+    margin-left: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .js-expand-card & {
+    opacity: 1;
+  }
+}
+
+.CardTechlist .CardTechlist__item {
+  padding: 5px;
+
+  @media (min-width: 1200px) {
+    padding: 10px;
+  }
+
+  img {
+    width: auto;
+    height: 35px;
+
+    @media (min-width: 1200px) {
+      height: 60px;
+    }
+  }
+}

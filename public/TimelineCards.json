@@ -1,11 +1,21 @@
 {
-    "timelineCards": [{
+    "timelineCards": [
+        {
+            "logoImage": "haymarket",
+            "startDate": "June 2019",
+            "endDate": "April 2021",
+            "title": "Haymarket Media Group",
+            "location": "England",
+            "description": "In 2019, I joined the Haymarket Automotive team to work on the What Car? website. After upskilling on my own with React, this was my first professional React position. I learnt tons about React in my first year and then moved into the full-stack team for my second year where I worked on the MERN stack for their buyer/dealership platform. The full-stack position was a steep learning curve but I was able to greatly improve my back-end skills and now feel comfortable developing MERN applications. I also greatly improved my unit/integration/end-to-end testing knowledge and became a more well-rounded developer, in addition to building on my existing front-end skills.",
+            "techlist": ["react", "es6", "node", "mongo", "aws", "webpack"]
+        },
+        {
             "logoImage": "me",
             "startDate": "May 2018",
-            "endDate": "Today",
+            "endDate": "June 2019",
             "title": "Freelance & Ecommerce",
             "location": "England, Spain, Malaysia, Australia",
-            "description": "For the past year I've had the (long-awaited) opportunity to visit my home country of Australia, as well as a handful of other countries. I was able to earn through my own ecommerce store which I built in 2016 and run with my wife (who is in marketing). The store is built on the Shopify platform and it's been a great way for me to learn all aspects of owning and running a business (not just the development side of Shopify). My freelance work has involved short-term 'Drupal 8', 'Shopify' and 'Big Commerce' projects, while in my freetime I've been learning React. Despite the success of the store and our fun travelling, my wife and I want to put our roots down, sell the store and focus on our careers in the UK.",
+            "description": "In 2018, I had the opportunity to travel and earn from my ecommerce business, as well as a few freelance projects. I also began skilling-up in React, with various Udemy projects. The store is built on the Shopify platform and it's been a great way for me to learn all aspects of owning and running a business (not just the development side of Shopify). My freelance work has involved short-term 'Drupal 8', 'Shopify' and 'Big Commerce' projects, while in my freetime I've been learning React. Despite the success of the store and our fun travelling, my wife and I want to put our roots down, sell the store and focus on our careers in the UK.",
             "techlist": ["shopify", "drupal8", "bigcommerce", "react", "es6"]
         },
         {
@@ -14,7 +24,7 @@
             "endDate": "April 2018",
             "title": "TES",
             "location": "England",
-            "description": "At TES, I implemented various features and upgrades to a fully-responsive Drupal 7 website 'Times Higher Education' which received 32.7 million in 2017. I was the lead front-end developer on this project before moving onto a green-fields Drupal 8 project for the TES Global website. My day-to-day included liasing with the designers, project managers and back-end developers, then implementing feature upgrades including new pages, widgets and redesigns into the Drupal 7 & 8 platforms, working daily with front-end and back-end technologies. These included all the latest responsive web standards (HTML5, CSS3, Flexbox) and tools such as SASS/SCSS, NPM, Docker, etc.",
+            "description": "At TES, I was the lead front-end developer for thefully-responsive Drupal 7 website 'Times Higher Education' which received 32.7 million visitors in 2017. Proving myself on the 'THE' website, I then moved onto a green-fields Drupal 8 project for the TES Global website. My day-to-day included liasing with the designers, project managers and back-end developers, then implementing feature upgrades including new pages, widgets and redesigns into the Drupal 7 & 8 platforms, working daily with front-end and back-end technologies. These included all the latest responsive web standards (HTML5, CSS3, Flexbox) and tools such as SASS/SCSS, NPM, Docker, etc.",
             "techlist": ["drupal7", "drupal8", "php", "sass", "bootstrap"]
         },
         {
@@ -86,7 +96,7 @@
             "endDate": "2011",
             "title": "USC",
             "location": "Australia",
-            "description": "At university, I comleted a 'Dual Degree in Electronic Media & Digital Design' and received a high distinction for both my design & programming portfolios for the final year. My programming portfolio included a bespoke game which I built in ActionScript 3 along with many nights on StackOverflow.",
+            "description": "At university, I completed a 'Dual Degree in Electronic Media & Digital Design' and received a high distinction for both my design & programming portfolios for the final year. My programming portfolio included a bespoke game which I built in ActionScript 3 along with many nights on StackOverflow.",
             "techlist": ["html", "css", "jquery", "as3"]
         }
     ]

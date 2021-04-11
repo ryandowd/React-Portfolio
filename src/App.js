@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import './App.scss';
+import Timeline from "./components/Timeline";
+import Sidebar from "./components/Sidebar";
+import Loading from "./components/UI/Loading";
 
-import Menu from "./components/Menu/Menu";
-import Intro from "./components/Intro/Intro";
-import Timeline from "./components/Timeline/Timeline";
-import Loading from "./components/UI/Loading/Loading";
+import './App.scss';
 
 class App extends Component {
 
@@ -28,13 +27,10 @@ class App extends Component {
   render() {
 
     const content = (
-      <React.Fragment>
-        <div className="Sidebar__container">
-          <Menu />
-          <Intro />
-        </div>
+      <>
+        <Sidebar />
         <Timeline timelineCardData={this.state.timelineCardData}/>
-      </React.Fragment>
+      </>
     );
 
     return (

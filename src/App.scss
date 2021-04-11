@@ -1,9 +1,21 @@
-.Sidebar__container {
+.App {
+  display: flex;
+}
+
+.Sidebar {
   background-color: lightblue;
 
-  @media (min-width: 900px) {
-    width: 40%;
+  @media (min-width: 900px) { 
+    width: 45%;
+    height: 100%;
     position: fixed;
-    min-height: 100%;
+    overflow: scroll;
   }
+
+  // @media (min-width: 900px) {
+  //   width: 40%;
+  //   position: fixed;
+  //   min-height: 100%;
+  // }
 }
+

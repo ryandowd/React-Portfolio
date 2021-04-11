@@ -1,0 +1,49 @@
+import React from 'react';
+import { getImage } from '../../shared/utility';
+
+import CardImage from "../../components/CardImage";
+import CardTechlist from "../../components/CardTechlist";
+
+import './CardContent.scss';
+
+const CardContent = (props) => {
+    const { 
+        onCardClicked, 
+        cardClicked,
+        cardId, 
+        logoImage, 
+        title, 
+        startDate, 
+        endDate, 
+        location,
+        techlist, 
+        description 
+    } = props;
+
+    console.log(techlist, 'techlist')
+
+    return (
+        <article className="Card__stack" onClick={onCardClicked} key={cardId}>
+            <div className="Card Card__left">
+            <header className="Card__header">
+                <CardImage logoImage={getImage(logoImage, 'logo')} />
+                <div className='Card__details'>
+                    <h4 className="Card__title">{title}</h4>
+                    <span className="Card__dates">{startDate} - {endDate}</span>
+                    <ul className="Card__locations">
+                        {location}
+                    </ul>
+                </div>
+            </header>
+            <div className="Card__techlist">
+                { cardClicked ? <CardTechlist techlist={techlist} /> : '' }
+            </div>
+            </div>
+            <div className="Card Card__right">
+                <p className="Card__description">{description}</p>
+            </div>
+        </article>
+    )
+}
+
+export default CardContent;

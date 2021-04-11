@@ -11,8 +11,7 @@
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5",
     "react-transition-group": "^1.2.1",
-    "react-visibility-sensor": "^5.0.2",
-    "sass-breakpoints-mixins": "^1.0.0"
+    "react-visibility-sensor": "^5.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,6 +27,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {}
+  ]
 }
