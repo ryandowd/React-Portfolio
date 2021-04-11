@@ -10,7 +10,7 @@ const intro = () => {
     '7+ years responsive web development (CSS3, HTML5, browser & device support)',
     // 'Lots of JavaScript applications/widgets (JSMVC, jQuery)',
     'Lots of Wordpress & Shopify site-building and theming',
-    'All the usual suspects: Agile, Webpack, Gulp, Git, Docker, Yarn, NPM, SASS/SCSS, Bootstrap, BEM, SMACCS, Photoshop, Zeplin',
+    'All the usual suspects: Agile, JIRA, Jenkins, Webpack, Gulp, Git, Docker, Yarn, NPM, SASS/SCSS, Bootstrap, BEM, SMACCS, Photoshop, Zeplin',
     'Experience with Google Ads, Web vitals, SEO, GTM'
   ];
 
