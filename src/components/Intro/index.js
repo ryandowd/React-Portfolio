@@ -16,7 +16,7 @@ const intro = () => {
 
   return (
     <div className="Intro">
-      <h3 className="Intro__heading font--bold">I'm a front-end web developer with over ten years experience building websites, widgets and web applications.</h3>
+      <h3 className="Intro__heading font--bold">I'm a front-end web developer with over ten years experience building websites, widgets and web applications...</h3>
       <ul className="Intro__list">
         {introList.map((itemText, index) => {
           return (<li key={index} className="Intro__list-item">{itemText}</li>)
