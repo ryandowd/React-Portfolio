@@ -2,10 +2,23 @@ import React from 'react';
 import classnames from 'classnames';
 import { getImage } from '../../shared/utility';
 
-import CardImage from "../../components/CardImage";
-import CardTechlist from "../../components/CardTechlist";
+import CardImage from "../CardImage";
+import CardTechlist from "../CardTechlist";
 
 import './CardContent.scss';
+
+// type Props = {
+//     onCardClicked: , 
+//     cardClicked,
+//     cardId: number, 
+//     logoImage: string, 
+//     title: string, 
+//     startDate: string, 
+//     endDate: string, 
+//     location: string,
+//     techlist: string, 
+//     description: string 
+// }
 
 const CardContent = (props) => {
     const { 

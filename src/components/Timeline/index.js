@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TimelineCard from "../../containers/TimelineCard";
+import TimelineCard from "../TimelineCard";
 
 import "./Timeline.scss";
 
