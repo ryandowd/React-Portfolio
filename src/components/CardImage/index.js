@@ -4,7 +4,7 @@ import './CardImage.scss';
 
 const CardImage = ( props ) => (
     <div className="Card__bannerImg">
-      <img src={props.logoImage} />
+      <img alt="company logo" src={props.logoImage} />
     </div>
 );
 

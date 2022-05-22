@@ -44,7 +44,7 @@ class TimelineCard extends Component {
         onChange={this.onVisibleCard}
         offset={{bottom: offset}}>
         <div className={classnames(['TimelineCard__container', classes])}>
-          {parseInt(cardIndex) != 0 && (
+          {parseInt(cardIndex) !== 0 && (
             <CardJoiner 
               cardId={cardId} 
               endDate={endDate} 

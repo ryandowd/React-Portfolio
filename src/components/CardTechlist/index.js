@@ -6,7 +6,7 @@ import './CardTechlist.scss';
 const CardTechlist = ( props ) => (
   <ul className="CardTechlist">
     {props.techlist.map(function(tech, key){
-      return <li key={key} className="CardTechlist__item"><img src={getImage(tech, 'tech')}/></li>;
+      return <li key={key} className="CardTechlist__item"><img alt="technology logo" src={getImage(tech, 'tech')}/></li>;
     })}
   </ul>
 );

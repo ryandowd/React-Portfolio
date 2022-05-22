@@ -1,12 +1,21 @@
 {
     "timelineCards": [
         {
+            "logoImage": "sky",
+            "startDate": "May 2021",
+            "endDate": "February 2022",
+            "title": "Sky",
+            "location": "England",
+            "description": "In this role, I was able to grow as a full-stack developer by collaborating and sometimes leading on many aspects of the React and Node architecture and daily development within our squads codebase. This made for a challenging but fun time at Sky. I was able to collaborate with other squads and their senior developers and this experience was invaluable, especially in a company the size of Sky. I also skilled up in GraphQL which, until Sky, I had only worked on in my personal dev time outside of work.",
+            "techlist": ["react", "es6", "node", "graphql", "aws", "webpack"]
+        },
+        {
             "logoImage": "haymarket",
             "startDate": "June 2019",
             "endDate": "April 2021",
             "title": "Haymarket Media Group",
             "location": "England",
-            "description": "I worked in the Haymarket Automotive team on the What Car? website. This was my first professional React position, after upskilling in React in my free time. I learned tons about React, and also helped organise/implement an 'Atomic design' structure for their FE components. I then moved into the full-stack team for my second year where I worked on the MERN stack for their buyer/dealership platform. I was able to greatly improve my back-end skills and now feel comfortable developing MERN applications. I also greatly improved my unit/integration/end-to-end testing knowledge and became a more well-rounded developer, in addition to building on my existing front-end skills.",
+            "description": "I worked in the Haymarket Automotive team on the What Car? website. This was my first professional React position, after upskilling in React in my free time. I learned tons about React, and also helped organise/implement an 'Atomic design' structure for their FE components with Storybook. I then moved into the full-stack team for my second year where I worked on the MERN stack for their buyer/dealership platform. I was able to greatly improve my back-end skills and now feel comfortable developing MERN applications. I also greatly improved my unit/integration/end-to-end testing knowledge and became a more well-rounded developer, in addition to building on my existing front-end skills.",
             "techlist": ["react", "es6", "node", "mongo", "aws", "webpack"]
         },
         {
@@ -15,7 +24,7 @@
             "endDate": "June 2019",
             "title": "Freelance & Ecommerce",
             "location": "England, Spain, Malaysia, Australia",
-            "description": "In 2018, I had the opportunity to travel and earn from my ecommerce business, as well as a few freelance projects. I also began skilling-up in React, with various Udemy projects. The store is built on the Shopify platform and it's been a great way for me to learn all aspects of owning and running a business (not just the development side of Shopify). My freelance work has involved short-term 'Drupal 8', 'Shopify' and 'Big Commerce' projects, while in my freetime I've been learning React. Despite the success of the store and our fun travelling, my wife and I want to put our roots down, sell the store and focus on our careers in the UK.",
+            "description": "In 2018, I had the opportunity to travel and earn from my ecommerce business, as well as a few freelance projects. I also began skilling-up in React, with various Udemy projects. My ecommerce store is built on the Shopify platform and it's been a great way for me to learn all aspects of owning and running a business (not just the development side of Shopify). My freelance work has involved short-term 'Drupal 8', 'Shopify' and 'Big Commerce' projects, while in my freetime I've been learning React. Despite the success of the store and our fun travelling, my wife and I want to put our roots down, sell the store and focus on our careers in the UK.",
             "techlist": ["shopify", "drupal8", "bigcommerce", "react", "es6"]
         },
         {
