@@ -1,0 +1,27 @@
+.TimelineCard__container {
+  position: relative;
+  transition: all 0.3s;
+  margin: 0 auto;
+  opacity: 0;
+  width: 90%;
+
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
+
+  // When card expanded
+  &.js-expand-card {
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  // When card is visible
+  &.js-show-card {
+    opacity: 1;
+
+    .Card__joiner {
+      opacity: 1;
+    }
+  }
+}
